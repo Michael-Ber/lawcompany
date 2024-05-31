@@ -13,11 +13,11 @@
     <div class="site-container">
         <!-- BANNER -->
 <div class="banner">
-    <div class="banner__close banner-close">
+    <button class="btn-reset banner__close banner-close">
         <svg class="banner-close__svg">
           <use xlink:href="assets/svg/sprite.svg#close"></use>
         </svg>
-    </div>
+    </button>
     <div class="banner__wrapper">
         <div class="container">
             <div class="banner__top banner-top">
@@ -26,12 +26,12 @@
                 </svg>
                 <h1 class="banner-top__title">Annual California Advocates Forum</h1>
                 <span class="banner-top__date banner-date">August 24-29, 2024</span>
-                <a href="#" class="banner-top__more banner-link">
+                <button class="btn-reset banner-top__more banner-link">
                     Read more
                     <svg class="banner-top__svg banner-link__svg">
                       <use xlink:href="assets/svg/sprite.svg#arrow-right"></use>
                     </svg>
-                </a>
+                </button>
             </div>
             <h2 class="banner__subtitle">Network with top lawyers, attend insightful sessions, and stay updated on the latest legal trends. Don't miss this opportunity to advance your career!</h2>
             <div class="banner__companies banner-companies">
@@ -60,11 +60,11 @@
     <div class="container header__container">
         <nav class="nav" title="Navigation menu">
           <ul class="list-reset nav__list">
-            <li class="nav__item"><a href="#" class="nav__link">law companies</a></li>
+            <li class="nav__item"><a href="company.html" class="nav__link">law companies</a></li>
             <li class="nav__item"><a href="#" class="nav__link">vendors</a></li>
           </ul>
         </nav>
-        <a href="#" class="header__logo logo">
+        <a href="/" class="header__logo logo">
             <img src="./assets/img/logo.svg" alt="Logo" class="logo__img">
         </a>
         <div class="header__user header-user">
@@ -88,7 +88,7 @@
 </div>
 <!-- /ABOUT -->
             <!-- SEARCH BAR -->
-<div class="search">
+<section class="search">
     <div class="container">
         <form action="#" class="search__form">
             <div class="search__input-wrapper">
@@ -98,6 +98,18 @@
                       <use xlink:href="assets/svg/sprite.svg#search"></use>
                     </svg>
                 </button>
+                <div class="search__input-btns hide">
+                    <button class="btn-reset search__remove" aria-label="Remove choice from input">
+                        <img loading="lazy" src="./assets/img/remove.svg" class="search__input-img" width="32" height="32" alt="Remove choice from input">
+                    </button>
+                    <button class="btn-reset search__enter">
+                        Enter 
+                        <svg class="search__enter-svg">
+                          <use xlink:href="assets/svg/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </button>
+                </div>
+                
                 <div class="search__pointer"></div>
                 
             </div>
@@ -124,16 +136,116 @@
                 </div>
             </div>
         </form>
-        <div class="search__results"></div>
+        <div class="search__similar search-similar">
+            <div class="search-similar__title">Similar searches</div>
+            <ul class="list-reset search-similar__list">
+                <li class="search-similar__item">
+                    <button class="btn-reset search-similar__btn">All</button>
+                </li>
+                <li class="search-similar__item">
+                    <button class="btn-reset search-similar__btn">Car Accident Claims</button>
+                </li>
+                <li class="search-similar__item">
+                    <button class="btn-reset search-similar__btn">Auto Injury Lawyer</button>
+                </li>
+                <li class="search-similar__item">
+                    <button class="btn-reset search-similar__btn">Vehicle Collision Legal Help</button>
+                </li>
+                <li class="search-similar__item">
+                    <button class="btn-reset search-similar__btn">Motor Vehicle Accident Attorney</button>
+                </li>
+                <li class="search-similar__item">
+                    <button class="btn-reset search-similar__btn">Traffic Accident Compensation</button>
+                </li>
+                <li class="search-similar__item">
+                    <button class="btn-reset search-similar__btn">Car Crash Legal Assistance</button>
+                </li>
+                <li class="search-similar__item">
+                    <button class="btn-reset search-similar__btn">Automobile Accident Representation</button>
+                </li>
+            </ul>
+        </div>
+        <div class="search__results search-results">
+            <div class="search-results__notfound">
+                <img loading="lazy" src="./assets/img/search-result.svg" class="search-results__notfound-img" width="80" height="80" alt="Nothing was found">
+                <h3 class="search-results__notfound-title">Nothing was found</h3>
+                <h4 class="search-results__notfound-subtitle">Try changing the query or check the popular law companies</h4>
+            </div>
+            <div class="search-results__top">
+                <h2 class="section-title search-results__title">
+                    Popular law companies specializing in Car Accidents
+                </h2>
+                <span class="search-results__amount"><span class="search-results__amount-value">48</span> companies</span>
+            </div>
+            <ul class="list-reset search-results__items">
+                <li class="search-results__item">
+                    <article class="popular__card company-card">
+                        <div class="company-card__descr">
+                            <div class="company-card__header">
+                                <a href="#" class="company-card__title">Golden State Law Firm</a>
+                                <div class="company-card__icons">
+                                    <button class="btn-reset company-card__btn" aria-label="Add to Favorite">
+                                        <svg class="company-card__svg">
+                                            <use xlink:href="assets/svg/sprite.svg#favorite"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <h4 class="company-card__attorneys">12 attorneys on staff</h4>
+                            <p class="company-card__text">Expert legal services across various fields, including corporate law, family law, and real estate. Dedicated to achieving the best outcomes for our clients</p>
+                        </div>
+                        <div class="company-card__contacts contacts-company-card">
+                            <div class="contacts-company-card__mail contacts-company-card__field">
+                                <a href="mailto:contact@californialegal.com" class="contacts-company-card__mail-link contacts-company-card__common-link">contact@californialegal.com</a>
+                                <span class="contacts-company-card__mail-name contacts-company-card__common-name">Email</span>
+                            </div>
+                            <div class="contacts-company-card__mail contacts-company-card__field">
+                                <a href="tel:12135550101" class="contacts-company-card__mail-link contacts-company-card__common-link">+1 213-555-0101</a>
+                                <span class="contacts-company-card__mail-name contacts-company-card__common-name">Phone</span>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                <li class="search-results__item">
+                    <article class="popular__card company-card company-card--pro">
+                        <div class="company-card__descr">
+                            <div class="company-card__header">
+                                <a href="#" class="company-card__title">Pacific Legal Advisors</a>
+                                <div class="company-card__icons">
+                                    <img loading="lazy" src="./assets/img/pro.svg" class="company-card__img" width="20" height="20" alt="sertificate pro">
+                                    <button class="btn-reset company-card__btn" aria-label="Add to Favorite">
+                                        <svg class="company-card__svg">
+                                            <use xlink:href="assets/svg/sprite.svg#favorite"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <h4 class="company-card__attorneys">2 attorneys on staff</h4>
+                            <p class="company-card__text">Providing comprehensive legal solutions with a focus on personal injury, criminal defense, and employment law. Trust our experienced team to protect your rights.</p>
+                        </div>
+                        <div class="company-card__contacts contacts-company-card">
+                            <div class="contacts-company-card__mail contacts-company-card__field">
+                                <a href="mailto:info@goldenstatelawfirm.com" class="contacts-company-card__mail-link contacts-company-card__common-link">info@goldenstatelawfirm.com</a>
+                                <span class="contacts-company-card__mail-name contacts-company-card__common-name">Email</span>
+                            </div>
+                            <div class="contacts-company-card__mail contacts-company-card__field">
+                                <a href="tel:14155550202" class="contacts-company-card__mail-link contacts-company-card__common-link">+1 415-555-0202</a>
+                                <span class="contacts-company-card__mail-name contacts-company-card__common-name">Phone</span>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
+</section>
 <!-- /SEARCH BAR -->
             <!-- POPULAR -->
 <section class="popular">
     <div class="container">
         <div class="popular__top">
             <h2 class="section-title popular__title">Popular law companies in your area</h2>
-            <span class="popular__amount">48 companies</span>
+            <span class="popular__amount"> <span class="popular__amount-value">48</span> companies</span>
         </div>
         <ul class="list-reset popular__items">
             <li class="popular__item">
@@ -163,7 +275,6 @@
                         </div>
                     </div>
                 </article>
-                
             </li>
             <li class="popular__item">
                 <article class="popular__card company-card company-card--pro">
@@ -601,9 +712,6 @@
 </section>
 <!-- /POPULAR -->
         </main>
-        <footer class="footer">
-    
-</footer>
     </div>
 
     <script defer src="js/script.js"></script>

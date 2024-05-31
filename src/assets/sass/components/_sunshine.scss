@@ -1,0 +1,156 @@
+.sunshine {
+    background: $white;
+    &__headline {
+        background: url('/assets/img/webp/headline-company-bg.webp') center center/cover no-repeat;
+        margin: 0 -40px;
+        padding: 21px 40px 36px 40px;
+        min-height: 280px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        align-self: flex-end;
+    }
+
+    &__logo-img {
+    }
+
+    &__close {
+        align-self: flex-start;
+    }
+
+    &__close-svg {
+        width: 32px;
+        height: 32px;
+        use {
+            fill: $close-bg;
+            transition: .3s fill ease-in-out;
+        }
+        &:hover {
+            use {
+                fill: lighten($close-bg, 20%)
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 40px 0 0 0;
+        // margin: 0 -40px;
+
+    }
+}
+.sunshine-content {
+
+    &__left {
+        width: calc(70% - 20px);
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__svg {
+        width: 32px;
+        height: 32px;
+        use {
+            transition: .3s fill ease-in-out;
+            fill: $blue-light;
+        }
+    }
+
+    &__paragraph {
+        max-width: 95%;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        color: $text-black;
+        margin: 0;
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__right {
+        width: 30%;
+    }
+
+    &__field {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__field-address {
+        font-size: 22px;
+        line-height: 120%;
+        color: $text-black;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    &__field-name {
+        display: block;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        color: $text-body;
+    }
+
+    &__field-schedule {
+        font-size: 18px;
+        line-height: 150%;
+        color: $text-black;
+        font-weight: 400;
+    }
+
+    &__field-email {
+        font-size: 22px;
+        line-height: 120%;
+        color: $text-black;
+        font-weight: 400;
+    }
+
+    &__btn {
+        &:hover {
+            .sunshine-content__svg {
+                use {
+                    fill: red
+                }
+            }
+        }
+    }
+
+    &__socials {
+        
+    }
+
+    &__socials-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 8px;
+    }
+
+    &__socials-img {
+    }
+}
+.str {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__left {
+    }
+
+    &__right {
+    }
+}

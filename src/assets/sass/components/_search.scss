@@ -1,9 +1,10 @@
 //SEARCH BAR
 .search {
-    padding: 32px 0 40px 0;
+    padding: 32px 0 20px 0;
     background: $section-bg;
 
     &__form {
+        padding-bottom: 40px;
     }
 
     &__input-wrapper {
@@ -45,6 +46,40 @@
         }
     }
 
+    &__input-btns {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 32px;
+        display: flex;
+        gap: 24px;
+    }
+
+    &__remove {
+        transition: .2s transform ease-in-out;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    &__enter {
+        line-height: 120%;
+        color: $white;
+        background: $banner-bg;
+        padding: 7px 16px;
+        transition: .2s background ease-in-out;
+        &:hover {
+            background: darken($banner-bg, 20%);
+        }
+    }
+    &__enter-svg {
+        width: 14px;
+        height: 9px;
+        margin-left: 10px;
+        use {
+            fill: $white;
+        }
+    }
+
     &__btns {
         display: flex;
         gap: 12px;
@@ -76,6 +111,10 @@
         gap: 5px;
         color: $text-gray;
     }
+
+    &__results {
+        padding: 40px 80px;
+    }
 }
 .search-radius {
 
@@ -105,5 +144,69 @@
         }
     }
 }
+
+.search-similar {
+    padding: 20px 0 40px 0;
+
+    &__title {
+        font-size: 20px;
+        line-height: 100%;
+        color: $text-black;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &__item {
+        background: $white;
+    }
+    &__btn {
+        width: 100%;
+        height: 100%;
+        padding: 12px 20px;
+        line-height: 135%;
+        color: $text-body;
+        letter-spacing: 0.02em;
+    }
+}
+
+.search-results {
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__notfound {
+        margin: 0 -40px;
+        padding-bottom: 80px;
+        border-bottom: 1px solid $white;
+    }
+    &__notfound-img {
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    &__notfound-title {
+        font-size: 40px;
+        line-height: 150%;
+        margin: 0;
+        margin-bottom: 20px;
+        color: $text-body;
+        text-align: center;
+    }
+    &__notfound-subtitle {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 127%;
+        color: $text-gray;
+        text-align: center;
+    }
+}
+
 
 //END SEARCH BAR
