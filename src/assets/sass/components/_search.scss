@@ -1,0 +1,109 @@
+//SEARCH BAR
+.search {
+    padding: 32px 0 40px 0;
+    background: $section-bg;
+
+    &__form {
+    }
+
+    &__input-wrapper {
+        position: relative;
+    }
+
+    &__options {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 20px 0 20px;
+    }
+
+    &__pointer {
+        position: absolute;
+        top: 100%;
+        left: 20px;
+        border: 10px solid transparent;
+        border-top: 10px solid $white;
+        transition: .6s left ease;
+    }
+
+    &__input {
+        padding: 24px 0;
+        padding-left: 42%;
+        font-size: 24px;
+        line-height: 135%;
+        width: 100%;
+        color: $text-black;
+        &::placeholder {
+            color: $text-gray;
+        }
+        &:focus {
+            outline: 2px dashed $text-gray;
+            padding-left: 92px;
+            & + .search__btn-icon {
+                left: 32px;
+            }
+        }
+    }
+
+    &__btns {
+        display: flex;
+        gap: 12px;
+        
+    }
+
+    &__item {
+        color: $text-gray;
+        line-height: 135%;
+        &--active {
+            color: $text-black;
+        }
+    }
+
+    &__btn-icon {
+        position: absolute;
+        top: 50%;
+        left: 39%;
+        transform: translate(0, -50%);
+    }
+
+    &__btn {
+        color: inherit;
+        line-height: inherit;
+    }
+
+    &__radius {
+        display: flex;
+        gap: 5px;
+        color: $text-gray;
+    }
+}
+.search-radius {
+
+    &__value {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: $text-black;
+        cursor: pointer;
+    }
+
+    &__svg {
+        width: 11px;
+        height: 6px;
+        use {
+            fill: $text-black
+        }
+    }
+}
+
+.search-btn {
+    &__svg {
+        width: 28px;
+        height: 25px;
+        use {
+            fill: $text-gray;
+        }
+    }
+}
+
+//END SEARCH BAR

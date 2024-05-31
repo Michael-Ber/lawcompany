@@ -1,0 +1,29 @@
+//ABOUT
+.about {
+    background: $section-bg;
+    &__descr {
+        font-size: 24px;
+        line-height: 150%;
+        color: $text-black;
+        font-weight: 400;
+        text-indent: 50%;
+        margin: 0;
+    }
+
+    &__more-wrapper {
+        text-align: center;
+    }
+
+    &__more {
+        font-size: 24px;
+        line-height: 150%;
+        font-weight: 400;
+        color: $text-gray;
+        text-align: center;
+        transition: .3s color ease-in-out;
+        &:hover {
+            color: darken($text-gray, 20%);
+        }
+    }
+}
+//END ABOUT

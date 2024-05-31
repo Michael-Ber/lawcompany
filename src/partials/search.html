@@ -1,0 +1,41 @@
+<!-- SEARCH BAR -->
+<div class="search">
+    <div class="container">
+        <form action="#" class="search__form">
+            <div class="search__input-wrapper">
+                <input type="text" name="name" placeholder="I was in a car accident" class="input-reset search__input">
+                <button class="btn-reset search__btn-icon search-btn" aria-label="Search">
+                    <svg class="search-btn__svg">
+                      <use xlink:href="assets/svg/sprite.svg#search"></use>
+                    </svg>
+                </button>
+                <div class="search__pointer"></div>
+                
+            </div>
+            <div class="search__options">
+                <ul class="list-reset search__btns">
+                    <li class="search__item search__item--active"><button class="btn-reset search__btn">All</button></li>
+                    <li class="search__item"><button class="btn-reset search__btn">Car accident</button></li>
+                    <li class="search__item"><button class="btn-reset search__btn">Housing issues</button></li>
+                    <li class="search__item"><button class="btn-reset search__btn">Housing issues</button></li>
+                    <li class="search__item"><button class="btn-reset search__btn">Family</button></li>
+                    <li class="search__item"><button class="btn-reset search__btn">Employment</button></li>
+                    <li class="search__item"><button class="btn-reset search__btn">Immigration</button></li>
+                    <li class="search__item"><button class="btn-reset search__btn">Personal Injury</button></li>
+                    <li class="search__item"><button class="btn-reset search__btn">Vendors</button></li>
+                </ul>
+                <div class="search__radius search-radius">
+                    Search radius: 
+                    <span class="search-radius__value">
+                        3 km 
+                        <svg class="search-radius__svg">
+                            <use xlink:href="assets/svg/sprite.svg#chevron"></use>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </form>
+        <div class="search__results"></div>
+    </div>
+</div>
+<!-- /SEARCH BAR -->

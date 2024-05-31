@@ -1,0 +1,135 @@
+//BANNER
+.banner {
+    position: relative;
+    padding: 12px 120px;
+    background: url('/assets/img/webp/banner-bg.webp') center center/cover no-repeat, $banner-bg;
+    overflow: hidden;
+    transition: .3s max-height ease-in-out, .3s padding ease-in-out;
+    &--full {
+        padding: 45px 120px 32px 120px;
+    }
+    &__top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 16px;
+    }
+
+    &__subtitle {
+        font-style: italic;
+        font-size: 32px;
+        line-height: 110%;
+        text-align: center;
+        color: $white;
+        margin: 0;
+        margin-bottom: 32px;
+    }
+
+    &__companies {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}
+.banner-close {
+    &__svg {
+        position: absolute;
+        top: 13px;
+        right: 13px;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        use {
+            fill: $close-bg;
+            transition: .2s fill ease-in-out;
+        }
+        &:hover {
+            use {
+                fill: lighten($close-bg, 20%);
+            }
+        }
+    }
+}
+.banner-top {
+
+    &__svg {
+        width: 24px;
+        height: 24px;
+        use {
+            fill: $white;
+        }
+    }
+
+    &__title {
+        color: $white;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin: 0;
+        line-height: 150%;
+    }
+
+    &__date {
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            border-radius: 100%;
+            background: $white;
+        }
+    }
+}
+
+.banner-date {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: $white;
+    font-size: 20px;
+    line-height: 150%;
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        border-radius: 100%;
+        background: $white;
+    }
+}
+
+.banner-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    transition: .3s color ease-in-out;
+    color: $white;
+    font-size: 20px;
+    line-height: 150%;
+    
+
+    &:hover {
+        color: blue;
+    }
+    &__svg {
+        width: 17px;
+        height: 13px;
+        use {
+            fill: currentColor;
+        }
+    }
+}
+
+//END BANNER
+

@@ -1,0 +1,175 @@
+.popular {
+    background: $section-bg;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        margin: 0;
+    }
+
+    &__amount {
+        line-height: 150%;
+        color: $text-body;
+    }
+
+    &__items {
+    }
+
+    &__item {
+    }
+
+    &__card {
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 24px 48px;
+        
+    }
+    &__more {
+        color: $text-body;
+        &::after {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            width: 2px;
+            height: 2px;
+            border-radius: 100%;
+            background: $text-body;
+            margin: 0 5px;
+        }
+    }
+}
+.company-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 222px;
+    background: $section-bg;
+    padding: 20px 40px;
+    margin: 0 -40px;
+    border-bottom: 1px solid $white;
+    &--pro {
+        background: $white;
+    }
+
+    &--day-company {
+        background: url('/assets/img/webp/company-card-bg.webp') center center/cover no-repeat;
+        
+    }
+
+    &__descr {
+        max-width: 768px;
+    }
+
+    &__day {
+        padding: 4px 8px;
+        color: $white;
+        font-size: 12px;
+        line-height: 135%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        font-weight: 600;
+        background: rgba($white, 0.2);
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 5px;
+    }
+
+    &__title {
+        font-size: 22px;
+        line-height: 135%;
+        font-weight: 700;
+    }
+
+    &__icons {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &__btn {
+        max-height: 20px;
+        &:hover {
+            & > .company-card__svg {
+                use {
+                    fill: red;
+                }
+            }
+        }
+    }
+
+    &__svg {
+        width: 20px;
+        height: 20px;
+        use {
+            transition: .3s fill ease-in-out;
+            fill: $blue-light;
+        }
+    }
+
+    &__attorneys {
+        font-size: 14px;
+        line-height: 100%;
+        color: $text-body;
+        letter-spacing: 0.02em;
+        margin: 0;
+        margin-bottom: 8px;
+    }
+
+    &__text {
+        line-height: 160%;
+        font-weight: 400;
+        color: $text-body;
+        margin: 0;
+    }
+
+    &__contacts {
+        min-width: 370px;
+    }
+}
+.contacts-company-card {
+
+    &__mail {
+    }
+
+    &__field {
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__mail-link {
+    }
+
+    &__common-link {
+        font-size: 22px;
+        line-height: 120%;
+        color: $text-black;
+        font-weight: 400;
+        margin-bottom: 8px;
+    }
+
+    &__mail-name {
+    }
+
+    &__common-name {
+        display: block;
+        font-size: 14px;
+        line-height: 120%;
+        color: $text-body;
+        font-weight: 400;
+    }
+}
+
+.company-card .white {
+    color: white;
+}
