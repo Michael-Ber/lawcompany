@@ -2,7 +2,7 @@
 .banner {
     position: relative;
     padding: 12px 120px;
-    background: url('/assets/img/webp/banner-bg.webp') center center/cover no-repeat, $banner-bg;
+    background: url('../assets/img/webp/banner-bg.webp') center center/cover no-repeat, $banner-bg;
     overflow: hidden;
     transition: .3s max-height ease-in-out, .3s padding ease-in-out;
     &--full {

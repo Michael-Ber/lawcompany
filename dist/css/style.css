@@ -63,7 +63,7 @@ a {
 .banner {
   position: relative;
   padding: 12px 120px;
-  background: url("/assets/img/webp/banner-bg.webp") center center/cover no-repeat, #2c4157;
+  background: url("../assets/img/webp/banner-bg.webp") center center/cover no-repeat, #2c4157;
   overflow: hidden;
   transition: .3s max-height ease-in-out, .3s padding ease-in-out; }
   .banner--full {
@@ -298,7 +298,7 @@ a {
     gap: 5px;
     color: #a7a4a4; }
   .search__results {
-    padding: 40px 80px; }
+    padding: 40px 0 80px 0; }
 
 .search-radius__value {
   display: flex;
@@ -411,7 +411,7 @@ a {
   .company-card--pro {
     background: #ffffff; }
   .company-card--day-company {
-    background: url("/assets/img/webp/company-card-bg.webp") center center/cover no-repeat; }
+    background: url("../assets/img/webp/company-card-bg.webp") center center/cover no-repeat; }
   .company-card__descr {
     max-width: 768px; }
   .company-card__day {
@@ -484,7 +484,7 @@ a {
 .sunshine {
   background: #ffffff; }
   .sunshine__headline {
-    background: url("/assets/img/webp/headline-company-bg.webp") center center/cover no-repeat;
+    background: url("../assets/img/webp/headline-company-bg.webp") center center/cover no-repeat;
     margin: 0 -40px;
     padding: 21px 40px 36px 40px;
     min-height: 280px;
